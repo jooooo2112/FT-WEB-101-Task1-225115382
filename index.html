@@ -1,0 +1,74 @@
+<!--
+Name: YOUR FULL NAME
+Student ID: YOUR STUDENT ID
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+            <a class="brand" href="#home">Your Name</a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#cards">Interests</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main id="home">
+        <section class="profile-section" id="about">
+            <h1>Your Name</h1>
+            <p class="intro">Hello! Welcome to my profile page.</p>
+            <img class="profile-photo" src="images/me.jpg" alt="A photo of me">
+        </section>
+
+        <section class="cards-section" id="cards" aria-label="My interests">
+            <article class="card">
+                <h2>My Skills</h2>
+                <p>Write a few skills you have or are learning.</p>
+            </article>
+            <article class="card">
+                <h2>My Hobbies</h2>
+                <p>Write about the activities you enjoy.</p>
+            </article>
+            <article class="card">
+                <h2>My Goals</h2>
+                <p>Write about something you want to achieve.</p>
+            </article>
+        </section>
+
+        <section class="contact-section" id="contact">
+            <h2>Get in touch</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <button type="submit" class="submit-button">Send</button>
+            </form>
+            <p id="greeting" class="greeting" aria-live="polite"></p>
+        </section>
+
+        <button type="button" id="theme-toggle" class="theme-button">Switch to dark mode</button>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Your Name. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
